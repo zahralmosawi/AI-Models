@@ -27,33 +27,7 @@ We developed machine learning models that analyze data from wearable Inertial Me
 - **Features:** 23 numeric sensor measurements
 - **Sampling:** Stratified 5% sample maintaining activity proportions
 
-## Activities Classified
-1. Walking
-2. Sitting
-3. Standing
-4. Running
-5. Cycling
-6. Ascending stairs
-7. Descending stairs
-8. Jumping
-9. Lying down
-10. Rope jumping
-11. Nordic walking
-12. Ironing
-13. Vacuum cleaning
-
-## Methodology
-
-### 1. Data Preparation
-- Stratified sampling (5% of original dataset)
-- Missing value imputation (mean for physiological features, forward/backward fill for orientation)
-- Duplicate removal
-- Outlier analysis (retained as valid extreme movements)
-- Label encoding (13 activities → numeric labels 0-12)
-- Feature scaling (StandardScaler)
-- Train-test split (80-20, stratified)
-
-### 2. Supervised Learning Models
+### Supervised Learning Models
 Implemented and evaluated 6 classification algorithms:
 
 | Model | Accuracy | Precision | Recall | F1-Score |
@@ -65,26 +39,6 @@ Implemented and evaluated 6 classification algorithms:
 | Logistic Regression | 66.79% | 66.95% | 66.79% | 65.73% |
 | SVM (Linear) | 63.05% | 64.51% | 63.05% | 60.04% |
 
-### 3. Hyperparameter Tuning
-- Performed Grid Search for Logistic Regression
-- Performed Randomized Search for Random Forest and Neural Network
-- Tuned on stratified subsets (15k-30k samples)
-- Used 3-fold cross-validation with F1-score optimization
-
-### 4. Model Selection
-**Random Forest** was selected as the optimal model due to:
-- Highest accuracy (94.45%)
-- Balanced precision and recall
-- Fast training and prediction
-- Robust to outliers
-- Feature importance interpretability
-
-## Key Findings
-1. **Ensemble and deep learning methods significantly outperform linear models** for activity recognition from sensor data
-2. **Random Forest provides the best balance** of accuracy, speed, and interpretability
-3. **Non-linear patterns are essential** - linear models (Logistic Regression, Linear SVM) achieved only 63-67% accuracy
-4. **Outliers represent valid extreme movements** during activities like jumping and should be retained
-
 ## Technologies Used
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
@@ -92,29 +46,6 @@ Implemented and evaluated 6 classification algorithms:
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=python&logoColor=white)
 ![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)
-
-## Results & Visualizations
-The notebook includes:
-- Missing data heatmaps
-- Box plots for outlier detection
-- Class distribution charts
-- Correlation heatmaps
-- Confusion matrices for all models
-- Model performance comparison tables
-
-## Clinical Implications
-This AI system enables hospitals to:
-- ✅ Track patient compliance with prescribed exercises
-- ✅ Detect deviations or abnormal movement patterns
-- ✅ Adjust therapy protocols remotely based on patient performance
-- ✅ Reduce need for constant in-person supervision
-- ✅ Improve post-operative care and rehabilitation outcomes
-
-## Limitations & Future Work
-- **Dataset size:** Used 5% sample due to computational constraints
-- **Hyperparameter tuning:** Tuned on subsets; full dataset tuning may improve performance
-- **Real-time deployment:** Model needs optimization for edge devices
-- **Feature engineering:** Additional domain-specific features could enhance accuracy
 
 ## Contributors
 - Zahra Almosawi
@@ -127,6 +58,3 @@ This AI system enables hospitals to:
 ## License
 This project is submitted as coursework for IT7009 at Bahrain Polytechnic.
 
----
-
-**For detailed methodology, code implementation, and analysis, please refer to the Jupyter notebook.**
