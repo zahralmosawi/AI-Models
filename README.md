@@ -62,6 +62,3 @@ We implemented and evaluated 6 classification algorithms:
 
 **Submitted for IT7009 - Artificial Intelligence**  
 **Bahrain Polytechnic | December 2025**
-```
-
----
