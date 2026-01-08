@@ -1,10 +1,5 @@
 # AI Activity Classification Project
 
-## Course Information
-- **Course:** IT7009 - Artificial Intelligence
-- **Institution:** Bahrain Polytechnic
-- **Project Type:** Group Project
-
 ## Project Overview
 This project develops an AI-based solution for monitoring patient recovery in hospitals using wearable sensor data. The system automatically classifies 13 different physical activities to help healthcare providers track patient compliance with prescribed exercises and detect abnormal movement patterns.
 
