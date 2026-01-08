@@ -27,8 +27,9 @@ We developed machine learning models that analyze data from wearable Inertial Me
 - **Features:** 23 numeric sensor measurements
 - **Sampling:** Stratified 5% sample maintaining activity proportions
 
-### Supervised Learning Models
-Implemented and evaluated 6 classification algorithms:
+## Results
+
+We implemented and evaluated 6 classification algorithms:
 
 | Model | Accuracy | Precision | Recall | F1-Score |
 |-------|----------|-----------|--------|----------|
@@ -38,6 +39,8 @@ Implemented and evaluated 6 classification algorithms:
 | KNN (subset) | 86.19% | 86.54% | 86.19% | 85.96% |
 | Logistic Regression | 66.79% | 66.95% | 66.79% | 65.73% |
 | SVM (Linear) | 63.05% | 64.51% | 63.05% | 60.04% |
+
+**Random Forest** achieved the best performance with 94.45% accuracy and was selected as the final model.
 
 ## Technologies Used
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -55,6 +58,10 @@ Implemented and evaluated 6 classification algorithms:
 - Alaa Ahmed
 - Esraa Alaradi
 
-## License
-This project is submitted as coursework for IT7009 at Bahrain Polytechnic.
+---
 
+**Submitted for IT7009 - Artificial Intelligence**  
+**Bahrain Polytechnic | December 2025**
+```
+
+---
